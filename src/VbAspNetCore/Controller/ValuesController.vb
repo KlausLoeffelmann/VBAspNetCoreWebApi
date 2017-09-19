@@ -6,7 +6,7 @@ Imports Microsoft.AspNetCore.Authorization
 Imports Microsoft.AspNetCore.Mvc
 
 Namespace FirstCSharpWebApp.Controllers
-    <Authorize, Route("api/[controller]")>
+    <Route("api/[controller]")>
     Public Class ValuesController
         Inherits Controller
 

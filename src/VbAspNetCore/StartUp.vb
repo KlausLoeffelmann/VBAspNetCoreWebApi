@@ -10,7 +10,9 @@ Imports Microsoft.Extensions.Logging
 
 Public Class Startup
     Public Sub New(ByVal env As IHostingEnvironment)
-        Dim builder = (New ConfigurationBuilder()).SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json", optional:=False, reloadOnChange:=True).AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional:=True).AddEnvironmentVariables()
+        Dim builder = (New ConfigurationBuilder()).SetBasePath(env.ContentRootPath).
+            AddJsonFile("appsettings.json", optional:=False, reloadOnChange:=True).
+            AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional:=True).AddEnvironmentVariables()
         Configuration = builder.Build()
     End Sub
 

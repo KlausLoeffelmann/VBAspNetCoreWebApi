@@ -11,7 +11,6 @@ Module Program
         UseStartup(Of StartUp).
         UseApplicationInsights().
         Build()
-
         host.Run()
     End Sub
 End Module

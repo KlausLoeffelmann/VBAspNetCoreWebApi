@@ -1,9 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <AddItemTemplatesGuid>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</AddItemTemplatesGuid>
-  </PropertyGroup>
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <OptionStrict>On</OptionStrict>
